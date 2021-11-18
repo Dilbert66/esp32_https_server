@@ -304,6 +304,7 @@ void HTTPConnection::readLine(int lengthLimit) {
           return;
         }
       }
+      _bufferProcessed += 1;
     } else {
       _parserLine.text += newChar;
       _bufferProcessed += 1;
